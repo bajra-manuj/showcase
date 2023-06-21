@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Project({ project }) {
   return (
     <div className="flex flex-col gap-3 text-center rounded px-4 my-4 border-2 border-gray-100 hover:shadow">
@@ -19,12 +21,17 @@ export default function Project({ project }) {
           className="cursor-pointer text-lg visited:text-inherit hover:text-fuchsia-500"
           href={project.link}
         >
-          github
           <i className="fa-brands fa-github"></i>
         </a>
-        <button className="cursor-pointer text-sm visited:text-inherit hover:text-fuchsia-500">
+        {/* <a className="cursor-pointer text-sm visited:text-inherit hover:text-fuchsia-500"> */}
+        {/*   <i className="fa-solid fa-up-right-from-square"></i>{' '} */}
+        {/* </a> */}
+        <Link
+          to="address-book"
+          className="cursor-pointer text-sm visited:text-inherit hover:text-fuchsia-500"
+        >
           <i className="fa-solid fa-up-right-from-square"></i>{' '}
-        </button>
+        </Link>
       </div>
     </div>
   );
