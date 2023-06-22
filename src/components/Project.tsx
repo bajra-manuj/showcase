@@ -1,6 +1,11 @@
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import { ProjectProp } from '../global/types';
 
-export default function Project({ project }) {
+type ProjectP = {
+  project: ProjectProp;
+};
+const Project: FC<ProjectP> = ({ project }) => {
   return (
     <div className="flex flex-col gap-3 text-center rounded px-4 my-4 border-2 border-gray-100 hover:shadow">
       <h2>{project.name}</h2>
@@ -35,4 +40,5 @@ export default function Project({ project }) {
       </div>
     </div>
   );
-}
+};
+export default Project;
