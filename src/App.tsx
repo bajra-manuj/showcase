@@ -4,7 +4,6 @@ import AddressBook from './pages/AddressBook';
 import Projects from './components/Projects';
 import { ProjectProp } from './global/types';
 
-// TODO: figure out using relative path in dist
 const projects: ProjectProp[] = [
   {
     name: 'AddressBook',
