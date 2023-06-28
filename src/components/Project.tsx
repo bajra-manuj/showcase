@@ -32,7 +32,7 @@ const Project: FC<ProjectP> = ({ project }) => {
         {/*   <i className="fa-solid fa-up-right-from-square"></i>{' '} */}
         {/* </a> */}
         <Link
-          to="address-book"
+          to={project.to}
           className="cursor-pointer text-sm visited:text-inherit hover:text-fuchsia-500"
         >
           <i className="fa-solid fa-up-right-from-square"></i>{' '}

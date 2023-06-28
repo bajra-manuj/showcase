@@ -3,4 +3,5 @@ export type ProjectProp = {
   description: string;
   link: string;
   tags: string[];
+  to: string;
 };
